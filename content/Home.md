@@ -1,6 +1,8 @@
 Jordan's wiki for my homelab
 
-# Navigation
+See the TOC below.
+
+***
 
 ## Build Guides
 Build guides for anything not covered by [[IAC|/infra/Ansible.md]] or additional build steps needed post deployment.
