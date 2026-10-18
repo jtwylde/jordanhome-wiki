@@ -7,3 +7,5 @@ wiki_options = {
     page_file_dir: "content/",
     sidebar: :left
 }
+
+Precious::App.set(:wiki_options, wiki_options)
