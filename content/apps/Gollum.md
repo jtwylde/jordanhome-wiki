@@ -10,7 +10,7 @@ The following tags/links are supported:
 - [[title|page]]: links to an internal page within Gollum with title
 - [[page#anchor]]: links to a specific anchor on the page (i.e a heading)
 - [[https://google.com]]: links to a website
-- [[google|https://google.com]]: links to a website with title
+- `[[google|https://google.com]]: links to a website with title
 - '[[_TOC_]]: shows a pages table of contents
 
 
