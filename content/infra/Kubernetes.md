@@ -1,7 +1,7 @@
 The homelab is built around a [[K3S|https://k3s.io]] cluster. This is a lightweight version of K8S suited for homelabs. 
 
 ## Structure 
-As of writing there are two control planes in the cluster, which also serve as nodes. See [[Networking|/infra/ipam.md]] for networking details
+As of writing there are two control planes in the cluster, which also serve as nodes. See [[Networking|/infra/networking.md]] for networking details
 
 Both control planes are ran from VMs on the Proxmox nodes.
 
