@@ -7,7 +7,7 @@ Gollum supports creating special 'subpages' that, when present in a directory, w
 ## Tags
 The following tags/links are supported:
 - '[[page]]: links to an internal page within Gollum
-- '[[title|page]]: links to an internal page within Gollum with title
+- [[title|page]]: links to an internal page within Gollum with title
 - '[[page#anchor]]: links to a specific anchor on the page (i.e a heading)
 - '[[https://google.com]]: links to a website
 - '[[google|https://google.com]]: links to a website with title
