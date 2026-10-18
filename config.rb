@@ -4,5 +4,6 @@ Gollum::Hook.register(:post_commit, :hook_id) do |committer, sha1|
 end
 
 wiki_options = {
-    page_file_dir: "content/"
+    page_file_dir: "content/",
+    sidebar: :left
 }
