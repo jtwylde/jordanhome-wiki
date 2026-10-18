@@ -3,7 +3,7 @@ Jordan's wiki for my homelab
 # Navigation
 
 ## Build Guides
-Build guides for anything not covered by [[IAC|/infra/ansible]] in the lab
+Build guides for anything not covered by [[IAC|/infra/Ansible.md]] in the lab
 
 <<Navigation("Infrastructure", "build", false)>>
 
