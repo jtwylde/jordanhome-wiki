@@ -3,7 +3,7 @@ The homelab is built around a [[K3S|https://k3s.io]] cluster. This is a lightwei
 ## Structure 
 As of writing there are two control planes in the cluster, which also serve as nodes. See [[Networking|/infra/Networking.md]] for networking details
 
-Both control planes are ran from VMs on the Proxmox nodes.
+Both control planes are ran from VMs on the [[Proxmox|/infra/Proxmox.md]] nodes.
 
 ## Contents
 All objects in the cluster are managed by the [[Ansible|/infra/Ansible.md]] playbooks. No changes should be made otherwise.
