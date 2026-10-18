@@ -4,8 +4,7 @@ Gollum::Hook.register(:post_commit, :hook_id) do |committer, sha1|
 end
 
 wiki_options = {
-    page_file_dir: "content/",
-    sidebar: :left
+    page_file_dir: "content/"
 }
 
 Precious::App.set(:wiki_options, wiki_options)
