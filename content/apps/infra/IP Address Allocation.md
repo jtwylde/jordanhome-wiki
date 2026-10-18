@@ -22,7 +22,7 @@ Roughly follow this guide for assigning new IPs in the network.
 # Allocations
 Current allocations for servers
 
-fqdn|ip|purpose/type
+**fqdn**|**ip**|**purpose/type**
 node0.pve.jordanhome.dev|192.168.1.160|thinkcentre
 node1.pve.jordanhome.dev|192.168.1.161|thinkcentre
 node2.pve.jordanhome.dev|192.168.1.162|nuc
