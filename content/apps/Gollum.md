@@ -2,7 +2,7 @@ Gollum is the app that runs the wiki (this one!).
 Gollum is backed by a file-based store, with all content written in markdown pages. The repo for the wiki is public, located [here](https://github.com/jtwylde/jordanhome-wiki)
 
 ## Sidebars, Footers, Headers
-Gollum supports creating special 'subpages' that, when present in a directory, will add sidebar, header, or footer onto all pages in that directory. They can be created/editing by naming the page _Sidebar, _Header, or _Footer
+Gollum supports creating special 'subpages' that, when present in a directory, will add sidebar, header, or footer onto all pages in that directory. They can be created/editing by naming the page **_Sidebar, _Header, or _Footer**
 
 ## Tags
 The following tags/links are supported:
@@ -30,5 +30,5 @@ end
 ```
 
 ## References
-[Gollum repo](https://github.com/gollum/gollum)
-[Gollum wiki](https://github.com/gollum/gollum/wiki)
+- [Gollum repo](https://github.com/gollum/gollum)
+- [Gollum wiki](https://github.com/gollum/gollum/wiki)
