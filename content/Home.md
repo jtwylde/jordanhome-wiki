@@ -1,6 +1,6 @@
 Jordan's wiki for my homelab
 
-See [[useful links|/Useful%20Links.md]] for a collection of quick links for handy resources.
+See [[useful links|/Useful Links.md]] for a collection of quick links for handy resources.
 
 See the TOC below for site contents.
 
