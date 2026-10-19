@@ -1,6 +1,8 @@
 Jordan's wiki for my homelab
 
-See the TOC below.
+See [[useful links|/Useful-links.md]] for a collection of quick links for handy resources.
+
+See the TOC below for site contents.
 
 ***
 
