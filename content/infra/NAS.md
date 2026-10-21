@@ -4,9 +4,6 @@ The web portal for the NAS is accessible [[here|https://nas.jordanhome.dev]].
 
 # Shared Folders
 A shared folder is a folder on the NAS that can be exposed to the network (i.e over NFS). We define three shared folders on the NAS:
-* Proxmox
-* JordanNAS
-* Backups
 
 ### Proxmox
 Used for storing images/templates/snippets for the [[proxmox cluster|/build/Proxmox Build Guide.md]].
