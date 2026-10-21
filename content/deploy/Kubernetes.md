@@ -6,7 +6,7 @@ As of writing there are two control planes in the cluster, which also serve as n
 Both control planes are ran from VMs on the [[Proxmox|/infra/Proxmox.md]] nodes.
 
 ## Contents
-All objects in the cluster are managed by the [[Ansible|/infra/Ansible.md]] playbooks. No changes should be made otherwise.
+All objects in the cluster are managed by the [[Ansible|/deploy/Ansible.md]] playbooks. No changes should be made otherwise.
 
 ## Conventions
 - Apps should be placed in their own namespaces (including all K8S objects [ingress, deployments, services, etc])
