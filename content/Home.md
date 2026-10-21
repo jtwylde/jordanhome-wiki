@@ -7,7 +7,7 @@ See the TOC below for site contents.
 ***
 
 ## Build Guides
-Build guides for anything not covered by [[IAC|/infra/Ansible.md]] or additional build steps needed post deployment.
+Build guides for anything not covered by [[IAC|/deploy/Ansible.md]] or additional build steps needed post deployment.
 
 <<Navigation("Build Guides", "build", false)>>
 
@@ -19,7 +19,7 @@ App design & informational pages on the apps deployed in the lab. This does not 
 ## Deployment
 Design & informational pages on software/tools used to deploy apps within the homelab. One step above infrastructure, one below apps.
 
-<<Navigation("Infrastructure", "deploy", false)>>
+<<Navigation("Deployment", "deploy", false)>>
 
 ## Infrastructure
 Design & informational pages on the various infrastructure pieces in the lab. Mostly intended for hardware or hypervisor-level pieces.
