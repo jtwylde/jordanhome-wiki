@@ -2,6 +2,8 @@ Jordan's wiki for my homelab
 
 See [[useful links|/Useful Links.md]] for a collection of quick links for handy resources.
 
+See [[useful commands|/Useful Commands.md]] for a collection of useful commands in the lab.
+
 See the TOC below for site contents.
 
 ***
