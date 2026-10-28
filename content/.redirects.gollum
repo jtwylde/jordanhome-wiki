@@ -1,2 +1,3 @@
 ---
 infra/ansible.md: infra/Ansible.md
+apps/Homepage.md: apps/Dashy.md
