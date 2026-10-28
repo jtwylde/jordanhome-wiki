@@ -3,7 +3,7 @@ Deploying a new web app in the lab requires creating a new [[Ansible|/deploy/Ans
 Refer to the [[Ansible|/deploy/Ansible.md]] page for details on the repo.
 
 ## Resources
-[[Kubernetes|/infra/Kubernetes.md]] resources are defined under /kubernetes-resources/<app>/.
+[[Kubernetes|/deploy/Kubernetes.md]] resources are defined under /kubernetes-resources/<app>/.
 We use [[jinja2|https://jinja.palletsprojects.com/en/stable/]] templates for the resources to let us pass in variables (as opposed to plain yaml). Each file represents a resource to be deployed in the cluster.
 
 ## Playbooks
