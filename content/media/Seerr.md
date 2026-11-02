@@ -3,12 +3,12 @@ Seerr is used as a frontend for requesting movies and shows in the media stack.
 ## Restoring from backup
 Follow below steps to restore from the automated Seerr backups in the NAS. Assumes access to the [[Kubernetes|/deploy/Kubernetes.md]] cluster.
 
-1. Shut down Seerr
+- Shut down Seerr
 
 `sudo kubectl scale statefulset seerr -n jellyfin --replicas=0`
 
-2. Create temporary pod
-
+- Create temporary pod
+> This pod will die after 1 hour
 ```bash
 echo "apiVersion: v1
 kind: Pod
@@ -20,7 +20,7 @@ spec:
   containers:
     - name: maintenance
       image: busybox:1.36
-      command: ["sh", "-c", "sleep 86400"]
+      command: ["sh", "-c", "sleep 3600"]
       volumeMounts:
         - name: backup
           mountPath: /backup
@@ -35,11 +35,11 @@ spec:
         claimName: media-config-backups-pvc" | sudo kubectl apply -f -
 ```
 
-3. Exec into the pod
+- Exec into the pod
 
 `sudo kubectl exec -it seerr-maintenance -n jellyfin -- sh`
 
-4. Copy backup files across
+- Copy backup files across
 
 ```bash
 # confirm latest backup
@@ -53,6 +53,6 @@ cp db.sqlite /seerr/db
 exit
 ```
 
-5. Restart Seerr
+- Restart Seerr
 
 `sudo kubectl scale statefulset seerr -n jellyfin --replicas=1`
