@@ -8,7 +8,10 @@ Follow below steps to restore from the automated Seerr backups in the NAS. Assum
 `sudo kubectl scale statefulset seerr -n jellyfin --replicas=0`
 
 - Create temporary pod
+
 > This pod will die after 1 hour
+
+
 ```bash
 echo "apiVersion: v1
 kind: Pod
