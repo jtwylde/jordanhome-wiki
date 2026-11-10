@@ -5,5 +5,8 @@ In theory, since the homelab is built around [[Kubernetes|/deploy/Kubernetes.md]
 ## Cluster
 As of writing there are two proxmox nodes in the cluster. See [[Networking|/infra/Networking.md]] for networking details.
 
+## Templates
+A standard Debian template is used for cloning all VMs in the environment. It is currently duplicated onto each node. The reason for this is that the template acts as the backend storage for each VM that clones it. We use LVM-thin local storage on each of the nodes, meaning that templates must exist locally in order to clone from them.
+
 ## Build
 See the [[build page|/build/Proxmox Build Guide.md]] for a guide on building the nodes.
