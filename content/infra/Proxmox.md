@@ -22,14 +22,14 @@ The user config is automatically generated from Proxmox. It will pass through th
 Vendor configs are merged with user configs on creation. We set a custom vendor config on the template through the CLI, and the config itself is stored on the [[NAS|/infra/NAS.md]]. We specify the default users (my admin user and the [[ansible|/deploy/Ansible.md]] user), as well as SSH keys for those users in here.
 
 The CLI command to set the custom CI vendor config:
+
 `qm set <template_vmid> --cicustom vendor=NAS:snippets/base_debian.yaml`
 
 Cloud-init merges vendor configs on top of user-data, but user-data will always take precedence, and it will not append/replace keys. 
-*In other words, if a key is already set in user-data, it will ignore that same key in vendor data.*
 
-By default, Proxmox will create a `users` list in user-data to define default users. This is a problem when trying to pass in custom users through vendor-data like we do. 
+**In other words, if a key is already set in user-data, it will ignore that same key in vendor data.**
 
-To get around this, we take advantage of a quirk in Proxmox where if the default user is set to **root** then it will not create the `users` list in user-data. See [[here|https://forum.proxmox.com/threads/cloud-init-brain-dump.170288/]].
+By default, Proxmox will create a `users` list in user-data to define default users. This is a problem when trying to pass in custom users through vendor-data like we do. To get around this, we take advantage of a quirk in Proxmox where if the default user is set to **root** then it will not create the `users` list in user-data. See [[here|https://forum.proxmox.com/threads/cloud-init-brain-dump.170288/]].
 > This is not well-defined behaviour and could be prone to breaking
 
 
